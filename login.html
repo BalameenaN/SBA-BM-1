@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <title>Login</title>
+    <style>
+        .login{
+
+         width:300px;
+
+        
+         }
+        body{
+            display: flex;
+            justify-content:center;
+            align-items: center; 
+            height: 50vh; 
+            text-align: center; 
+              
+        }
+        fieldset{
+          width:20%;
+          background: rgb(235, 227, 160);
+          border: none;
+          border-radius: 20px;
+          
+        }
+
+        input{
+            
+            border-radius: 5px;
+            border:none;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding:5px 5px;
+        }
+
+        #submit{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: rgb(243, 161, 161);
+        }
+
+        
+        
+        
+    </style>
+</head>
+<body>
+
+  
+    
+    <fieldset>
+    <form>
+        <div class="login">
+        <label for="Name">Name</label><br>
+        <input id="Name" class="required" name="Name" type="text" placeholder="Enter your Name" /><br>
+        <label for="Email">Email</label><br>
+        <input id="Email" class="required" name="Email" type="text" placeholder="Enter your Email" /><br>
+        <label for="Email">Password</label><br>
+        <input id="Password" name="Password" type="password" placeholder="Enter password" /><br>
+        <input id="submit" type="submit" />
+    </div>
+
+    </form>
+</fieldset>
+
+</body>
+</html>
