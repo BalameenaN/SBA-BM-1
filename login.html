@@ -1,72 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
+
     <title>Login</title>
     <style>
-        .login{
+        .login {
 
-         width:300px;
+            width: 300px;
 
-        
-         }
-        body{
-            display: flex;
-            justify-content:center;
-            align-items: center; 
-            height: 50vh; 
-            text-align: center; 
-              
-        }
-        fieldset{
-          width:20%;
-          background: rgb(235, 227, 160);
-          border: none;
-          border-radius: 20px;
-          
+
         }
 
-        input{
-            
+        body>img {
+            width: 80px;
+
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: none;
+        }
+
+        body h4 {
+
+            text-align: center;
+
+        }
+
+        .header-right {
+            background: rgb(240, 165, 165);
+            height: 50px;
+            width: 100%;
+
+
+
+        }
+
+        .header-right a {
+
+            text-decoration: none;
+            border: none;
+            padding: 5px 5px;
+            float: right;
+            text-align: center;
+            margin-top: 10px;
+            background-color: rgb(106, 184, 106);
+            margin-right: 10px;
             border-radius: 5px;
-            border:none;
+            color: white;
+
+
+        }
+
+
+        .fields {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        fieldset {
+            width: 10%;
+            background: rgb(235, 227, 160);
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+
+        }
+
+        input {
+
+            border-radius: 5px;
+            border: none;
             margin-top: 5px;
             margin-bottom: 5px;
-            padding:5px 5px;
+            padding: 5px 5px;
         }
 
-        #submit{
+        #submit {
             display: block;
             margin-right: auto;
             margin-left: auto;
             background-color: rgb(243, 161, 161);
         }
 
-        
-        
-        
+        body::before {
+            content: "";
+            position: fixed;
+            background-image: url("login-page.jpg");
+            z-index: -1;
+            inset: 0;
+
+            background-size: cover;
+            opacity: 0.3;
+        }
+
+        h4>a {
+            color: red;
+        }
     </style>
 </head>
-<body>
 
-  
-    
-    <fieldset>
-    <form>
-        <div class="login">
-        <label for="Name">Name</label><br>
-        <input id="Name" class="required" name="Name" type="text" placeholder="Enter your Name" /><br>
-        <label for="Email">Email</label><br>
-        <input id="Email" class="required" name="Email" type="text" placeholder="Enter your Email" /><br>
-        <label for="Email">Password</label><br>
-        <input id="Password" name="Password" type="password" placeholder="Enter password" /><br>
-        <input id="submit" type="submit" />
+<body>
+    <img src="./header1.jpg">
+    <h4>Holistic Healing Center</h4>
+    <div class="header-right">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <h1 style="text-align:center;"> LOGIN PAGE</h1>
+    <div class="fields">
+
+        <fieldset>
+            <form>
+                <div class="login">
+                    <label for="Name">Name</label><br>
+                    <input id="Name" class="required" name="Name" type="text" placeholder="Enter your Name" /><br>
+                    <label for="Email">Email</label><br>
+                    <input id="Email" class="required" name="Email" type="text" placeholder="Enter your Email" /><br>
+                    <label for="Email">Password</label><br>
+                    <input id="Password" name="Password" type="password" placeholder="Enter password" /><br>
+                    <input id="submit" type="submit" />
+                </div>
     </div>
 
     </form>
-</fieldset>
-
+    </fieldset>
+    <h4 style="text-align: center;"> New Member!click <a href="register.html">HERE</a> to REGISTER</h4>
 </body>
+
 </html>

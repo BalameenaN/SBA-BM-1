@@ -1,35 +1,86 @@
-fieldset{
+fieldset {
     margin-top: 10px;
-    width:350px;
-    
-    display: flex;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
-    border-radius:10px;
-    border:none;
+    border-radius: 10px;
+    border: none;
     background: rgb(240, 240, 201);
 
-    
+
 }
 
-input{
-    padding:10px 5px;
+input {
+    padding: 10px 5px;
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     border: none;
+   
+
 }
 
-#btn{
+#btn {
 
     border-radius: 8px;
-    margin-right:auto;
+    margin-right: auto;
     margin-left: auto;
-    display:block;
+    display: block;
     margin-top: 10px;
     border: .5px solid grey;
     padding: 5px 5px;
-    color:rgb(250, 249, 249);
+    color: rgb(250, 249, 249);
     font-size: medium;
     background-color: rgb(17, 17, 14);
 }
+
+body img {
+
+    width: 80px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: none;
+}
+
+h1,
+h4,
+h3 {
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background-image: url("login-page.jpg");
+    z-index: -1;
+    inset: 1px;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.header-right {
+    background: rgb(240, 165, 165);
+    height: 50px;
+    width: 100%;
+
+
+
+}
+
+.header-right a {
+
+    text-decoration: none;
+    border: none;
+    padding: 5px 5px;
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(106, 184, 106);
+    margin-right: 10px;
+    border-radius: 5px;
+    color: white;
+
+
+}
+
